@@ -1,0 +1,15 @@
+.building {
+    display: flex;
+    height: 95vh;
+    width: 180vh;
+    margin: auto;
+    background-color: #ddd;
+    padding: 10px;
+}
+
+h2{
+    font-family: 'Sacramento', cursive;
+    margin-left: 40%;
+    position: absolute;
+    margin-top: 3%;
+}
