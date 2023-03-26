@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import './styles.css';
 
-const TIME_BETWEEN_FLOORS = 2000;
+const TIME_BETWEEN_FLOORS = 5000;
 const ELEVATOR_SPACING = 180;
 
 function Elevator({ id, floor, distance, numberOfFloors, onElevatorArrive, onElevatorReachedFloor }) {
