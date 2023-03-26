@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import './styles.css';
 
-const TIME_BETWEEN_FLOORS = 5000;
+const TIME_BETWEEN_FLOORS = 4000;
+const WAITING_TIME = 2000;
 const ELEVATOR_SPACING = 180;
 
 function Elevator({ id, floor, distance, numberOfFloors, onElevatorArrive, onElevatorReachedFloor }) {
@@ -17,7 +18,7 @@ function Elevator({ id, floor, distance, numberOfFloors, onElevatorArrive, onEle
                     // change to call
                     setElevatorColor();
                     onElevatorArrive(id);
-                }, TIME_BETWEEN_FLOORS);
+                }, WAITING_TIME);
             }, TIME_BETWEEN_FLOORS);
         }
     }, [distance]);
