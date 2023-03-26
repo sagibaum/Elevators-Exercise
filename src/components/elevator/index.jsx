@@ -3,7 +3,7 @@ import './styles.css';
 
 const TIME_BETWEEN_FLOORS = 4000;
 const WAITING_TIME = 2000;
-const ELEVATOR_SPACING = 180;
+const ELEVATOR_SPACING = 150;
 
 function Elevator({ id, floor, distance, numberOfFloors, onElevatorArrive, onElevatorReachedFloor }) {
     const [elevatorColor, setElevatorColor] = useState();
@@ -26,7 +26,7 @@ function Elevator({ id, floor, distance, numberOfFloors, onElevatorArrive, onEle
     return (
         <svg className="elevator" style={{
             'left': `${(id * ELEVATOR_SPACING)}px`,
-            'top': `calc(${(((numberOfFloors - floor) * 50))}px - ${floor * 5.4}px)`,
+            'top': `calc(${(((numberOfFloors - floor) * 44.5))}px - ${floor * 5}px)`,
         }}
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 50 50" fill="#000000">
